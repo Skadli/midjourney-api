@@ -5,9 +5,9 @@ docker network create mjapi
 docker run -d --net mjapi --name mj-server -p 8062:8062 \
 	-e TZ=Asia/Shanghai \
 	-e LOG_LEVEL=DEBUG \
-	-e USER_TOKEN="" \
-	-e GUILD_ID="" \
-	-e CHANNEL_ID="" \
+	-e USER_TOKEN="MTAyMTE2MjUxODgyMDk1NDIyMw.GbIGOl.oThwJLzshMOif6-tBuEF3poqIjKNX0994Q6yNc" \
+	-e GUILD_ID="1127243485595058316" \
+	-e CHANNEL_ID="1127243486094184561" \
 	-e CONCUR_SIZE=3 \
 	-e WAIT_SIZE=10 \
 	kunyu/midjourney-api:1.0
